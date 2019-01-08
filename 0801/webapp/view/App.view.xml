@@ -1,4 +1,4 @@
-<mvc:View controllerName="konica.fiori.Prospect_Tasks.controller.App" xmlns:html="http://www.w3.org/1999/xhtml"
+<mvc:View controllerName="konica.fiori.Prospect_Tasks1.controller.App" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
 	<App id="App"/>
 </mvc:View>
