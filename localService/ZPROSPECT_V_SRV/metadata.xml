@@ -1,0 +1,97 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZPROSPECT_V_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="Prospect" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="QuoteId"/>
+					<PropertyRef Name="AccountD"/>
+				</Key>
+				<Property Name="QuoteId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Quote ID" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="AccountD" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Account ID" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="AccountName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="BranchNumber" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Branch No"
+					sap:creatable="false" sap:updatable="false"/>
+				<Property Name="BranchName" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Branch Name"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="CompanyCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Company" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="SalesOrg" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Sales Org" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="CurrentRole" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Current Role"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="CurrentRoleDesc" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Role Desc"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="FutureRole" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Future Role"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="FutureRoleDesc" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Future Role Desc"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="ParentAcountId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Parent Accnt"
+					sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+				<Property Name="ParentAccountName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Parent Accnt Name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="QuoteStatus" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Quote Status"
+					sap:creatable="false" sap:updatable="false"/>
+				<Property Name="QuoteStatusDecs" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Quote Status Desc"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="Comments" Type="Edm.String" Nullable="false" MaxLength="256" sap:unicode="false" sap:label="Comment" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="RequestedEmployeeNumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Req Emp No"
+					sap:creatable="false" sap:updatable="false"/>
+				<Property Name="RequestedEmployeeName" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Req Emp Name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="RequestedEmployeeEmail" Type="Edm.String" Nullable="false" MaxLength="256" sap:unicode="false" sap:label="Req Emp Email"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="AccountOwnerName" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Owner Name"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="RequestedDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Req Date"
+					sap:creatable="false" sap:updatable="false"/>
+				<Property Name="WorkflowMessageText" Type="Edm.String" Nullable="false" MaxLength="256" sap:unicode="false" sap:label="Workflow Msg"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ParameterizedUrl" Type="Edm.String" Nullable="false" MaxLength="1332" sap:unicode="false" sap:label="URL"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="RecordStatus" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Rec Status"
+					sap:creatable="false" sap:updatable="false"/>
+				<Property Name="RejectionComment" Type="Edm.String" Nullable="false" MaxLength="256" sap:unicode="false" sap:label="Rej Comments"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TotalQuoteValue" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Total"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityContainer Name="ZPROSPECT_V_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet Name="Prospects" EntityType="ZPROSPECT_V_SRV.Prospect" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+					sap:pageable="false" sap:content-version="1"/>
+			</EntityContainer>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZPROSPECT_V_SRV/$metadata"/>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZPROSPECT_V_SRV/$metadata"/>
+			<Annotations Target="ZPROSPECT_V_SRV.Prospect" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="com.sap.vocabularies.UI.SelectionFields">
+					<Collection>
+						<PropertyPath>BranchNumber</PropertyPath>
+						<PropertyPath>QuoteStatus</PropertyPath>
+						<PropertyPath>RequestedEmployeeNumber</PropertyPath>
+						<PropertyPath>RecordStatus</PropertyPath>
+					</Collection>
+				</Annotation>
+				<Annotation Term="com.sap.vocabularies.UI.v1.LineItem">
+					<Collection>
+						<Record Type="com.sap.vocabularies.UI.v1.DataField">
+							<PropertyValue Property="Value" Path="QuoteId"/>
+						</Record>
+						<Record Type="com.sap.vocabularies.UI.v1.DataField">
+							<PropertyValue Property="Value" Path="AccountD"/>
+						</Record>
+						<Record Type="com.sap.vocabularies.UI.v1.DataField">
+							<PropertyValue Property="Value" Path="BranchNumber"/>
+						</Record>
+						<Record Type="com.sap.vocabularies.UI.v1.DataField">
+							<PropertyValue Property="Value" Path="BranchName"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
