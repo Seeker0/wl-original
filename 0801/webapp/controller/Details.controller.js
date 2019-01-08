@@ -175,7 +175,7 @@ sap.ui.define([
           window.history.go(-1);
         },
         error: function(oError) {
-          console.log("testing");
+     //     console.log("testing");
         }
       });
     },
