@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog contentWidth="1024px" title="Please enter the reason for Rejection message" draggable="true" contentHeight="350px" afterOpen="afterRejDialogOpen">
+		<VBox class="sapUiSmallMargin" width="100%">
+			<f:SimpleForm editable="true">
+				<f:content>
+					<Label text="Requesting User"/>
+					<Text id="RejReqEmpName" text="{RequestedEmployeeName}"/>
+					<Label text="Email"/>
+					<Text id="RejReqEmpEmail" text="{RequestedEmployeeEmail}"/>
+					<Label text="Account Number"/>
+					<Text id="RejAccountId" text="{AccountD}"/>
+					<Label text="Rejection Message" labelFor="RejComments"/>
+					<TextArea id="RejComments" value="{RejectionComment}" rows="5" width="80%" change="onRejCommentsChange"/>
+				</f:content>
+			</f:SimpleForm>
+		</VBox>
+		<buttons>
+			<Button text="SAVE" press="onRejSave" type="Accept"/>
+			<Button text="CLOSE" press="onCloseDialog" type="Reject"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
