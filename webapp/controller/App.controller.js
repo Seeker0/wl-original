@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("konica.fiori.Prospect_Tasks1.controller.App", {
+	return Controller.extend("konica.fiori.Prospect_Tasks.controller.App", {
 		onInit: function() {
 		}
 

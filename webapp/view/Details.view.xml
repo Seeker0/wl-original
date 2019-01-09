@@ -1,4 +1,4 @@
-<mvc:View controllerName="konica.fiori.Prospect_Tasks1.controller.Details" xmlns:html="http://www.w3.org/1999/xhtml"
+<mvc:View controllerName="konica.fiori.Prospect_Tasks.controller.Details" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout">
 	<Page title="{i18n>DetailTitle}" showNavButton="true" navButtonPress="onNavPress">
 		<content>
@@ -12,7 +12,7 @@
 				</FlexBox>
 				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsM="2" columnsL="2" title="{WorkflowMessageText}">
 					<f:content>
-						<Label text="Current Role">
+						<Label text="Current Role - New">
 							<layoutData>
 								<layout:GridData span="L2 M2"/>
 							</layoutData>

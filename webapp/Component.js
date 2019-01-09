@@ -5,7 +5,7 @@ sap.ui.define([
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("konica.fiori.Prospect_Tasks1.Component", {
+	return UIComponent.extend("konica.fiori.Prospect_Tasks.Component", {
 
 		metadata: {
 			manifest: "json"
