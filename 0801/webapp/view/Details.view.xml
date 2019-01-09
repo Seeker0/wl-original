@@ -12,7 +12,7 @@
 				</FlexBox>
 				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsM="2" columnsL="2" title="{WorkflowMessageText}">
 					<f:content>
-						<Label text="Current Role">
+						<Label text="Current Role - New">
 							<layoutData>
 								<layout:GridData span="L2 M2"/>
 							</layoutData>
