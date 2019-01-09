@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 fioriHtmlRunner.html
 .*/fioriHtmlRunner.html
 visual_ext_index.html
@@ -13,7 +12,6 @@ changes_preview.js
 AppVariant_index.html
 APIExternalProducer.js
 .*/APIExternalProducer.js
-=======
 **/dist/
 fioriHtmlRunner.html
 .*/fioriHtmlRunner.html
@@ -29,5 +27,3 @@ changes_preview.js
 AppVariant_index.html
 APIExternalProducer.js
 .*/APIExternalProducer.js
->>>>>>> refs/heads/Working
-/0801/dist/
