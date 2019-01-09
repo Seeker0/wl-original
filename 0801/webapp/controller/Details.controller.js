@@ -10,7 +10,7 @@ sap.ui.define([
 ], function(Controller, Filter, FilterOperator, BusyDialog, JSONModel, ListItem, MessageBox, BusyIndicator) {
   "use strict";
   var QuoteId, AccountId;
-  return Controller.extend("konica.fiori.Prospect_Tasks1.controller.Details", {
+  return Controller.extend("konica.fiori.Prospect_Tasks.controller.Details", {
 
     onInit: function() {
       this.getOwnerComponent().getRouter("detail").attachRouteMatched(this.onDetailMatched, this);
@@ -137,7 +137,7 @@ sap.ui.define([
     },
     onReject: function() {
       if (!this.rejDialog) {
-        this.rejDialog = sap.ui.xmlfragment("idFragment", "konica.fiori.Prospect_Tasks1.frag.RejectDialog", this);
+        this.rejDialog = sap.ui.xmlfragment("idFragment", "konica.fiori.Prospect_Tasks.frag.RejectDialog", this);
       }
       // sap.ui.getCore().byId("RejAccountId").setText(this.oData.AccountD);
       // var sPathToBind = this.getView().getBindingContext().getPath();
