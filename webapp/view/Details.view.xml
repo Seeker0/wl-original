@@ -1,0 +1,129 @@
+<mvc:View controllerName="konica.fiori.Prospect_Tasks.controller.Details" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout">
+	<Page title="{i18n>DetailTitle}" showNavButton="true" navButtonPress="onNavPress">
+		<content>
+			<VBox class="sapUiSmallMargin" width="100%">
+				<FlexBox justifyContent="Center">
+					<FlexBox alignContent="Center" alignItems="Center" justifyContent="SpaceAround" width="50%">
+						<items>
+							<Text id="WrokflowMsgTxt" text="{WorkflowMessageText}" class="workflowMessage"/>
+						</items>
+					</FlexBox>
+				</FlexBox>
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsM="2" columnsL="2" title="{WorkflowMessageText}">
+					<f:content>
+						<Label text="Current Role - New">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="CurrentRole" text="">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Future Role">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="FutureRole" text="">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Requested by">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="ReqEmpName" text="{RequestedEmployeeName}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Quote ID">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="QuoteId_Txt" text="{QuoteId}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Email">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="ReqEmpEmail" text="{RequestedEmployeeEmail}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Quote Status">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="QuoteStatus" text="{QuoteStatusDecs}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Branch">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="BranchNumber" text="{BranchNumber}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Parent Account">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="ParentAcountId" text="{ParentAcountId}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>
+						<Label text="Account Id">
+							<layoutData>
+								<layout:GridData span="L2 M2"/>
+							</layoutData>
+						</Label>
+						<Text id="AccountId" text="{AccountD}">
+							<layoutData>
+								<layout:GridData span="L4 M4"/>
+							</layoutData>
+						</Text>						
+						<Label text="Comments">
+							<layoutData>
+								<layout:GridData span="L12 M12"/>
+							</layoutData>
+						</Label>
+						<TextArea id="Comments" value="{Comments}" rows="5" editable="false">
+							<layoutData>
+								<layout:GridData span="L12 M12"/>
+							</layoutData>
+						</TextArea>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+			<FlexBox justifyContent="Center">
+				<FlexBox alignContent="Center" alignItems="Center" justifyContent="SpaceAround" width="50%">
+					<items>
+						<Button id="Upgrade" text="Upgrade Prospect" width="100%" type="Accept" class="sapUiSmallMarginEnd" press="onUpgrade"/>
+						<Button id="Reject" text="Reject Upgrade" width="100%" type="Reject" class="sapUiSmallMarginEnd" press="onReject"/>
+						<Button id="Complete" text="Complete Task" width="100%" type="Emphasized" press="onComplete"/>
+					</items>
+				</FlexBox>
+			</FlexBox>
+		</content>
+	</Page>
+</mvc:View>
